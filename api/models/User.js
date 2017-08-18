@@ -2,11 +2,25 @@ module.exports = {
 	attributes: {
 
 		firstName: {
+			type: 'string'
+		},
+
+		lastName: {
+			type: 'string'
+		},
+
+		userName: {
 			type: 'string',
 			required: true
 		},
 
-		lastName: {
+		email: {
+			type: 'string',
+			required: true,
+			unique: true
+		},
+
+		password: {
 			type: 'string',
 			required: true
 		}

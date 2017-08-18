@@ -50,6 +50,16 @@ module.exports.routes = {
 	// UserController
 	////
 
+	'post /api/users/login': {
+		controller: 'UserController',
+		action: 'login'
+	},
+
+	'post /api/users/register': {
+		controller: 'UserController',
+		action: 'register'
+	},
+
 	'get /api/users/find': {
 		controller: 'UserController',
 		action: 'find'
